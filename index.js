@@ -1,6 +1,17 @@
 // index.js
 // where your node app starts
 
+
+
+
+
+
+
+
+
+
+
+
 // init project
 require('dotenv').config();
 var express = require('express');
@@ -18,6 +29,7 @@ app.use(express.static('public'));
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
+
 
 // your first API endpoint...
 app.get('/api/hello', function (req, res) {
